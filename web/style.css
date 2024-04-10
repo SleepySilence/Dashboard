@@ -1,36 +1,44 @@
 body {
+    font-size: 62.5%;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    max-height: 100vh;
+    height: 100vh;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em;
+li{
+    list-style: none;
 }
 
-section {
-    text-align: center;
-    margin: 2em;
+.container{
+    width: 80%;
+    height: 90%;
+    border-radius: 1rem;
+    margin: auto;
+    background-color: rgb(43, 226, 150);
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
 }
 
-.afbeelding{
-    width: 250px;
-    height: 200px;
+.ahmad{
+    grid-area: 2 / 4 / 4 / 7;
 }
 
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    text-decoration: none;
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 5px;
+.dennis{
+    grid-area: 4 / 4 / 6 / 7;
 }
+
+.jay{
+    grid-area: 6 / 4 / 8 / 7;
+}
+/*.box, .box2, .box3 {
+    width: 40%;
+
+}*/
 
 footer {
     background-color: #333;
