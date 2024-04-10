@@ -7,11 +7,6 @@ body {
     height: 100vh;
 }
 
-ul{
-    text-decoration: none;
-    list-style: none;
-}
-
 .container{
     width: 80%;
     height: 90%;
