@@ -29,7 +29,8 @@ li{
 }
 
 .dennis{
-    grid-area: 4 / 4 / 6 / 7;
+    grid-column: 4 / 4;
+    grid-row: 6 / 7;
 }
 
 .jay{
