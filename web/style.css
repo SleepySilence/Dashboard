@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     max-height: 100vh;
-    height: 100vh;
+    height: 90vh;
 }
 
 li{
@@ -17,29 +17,31 @@ li{
     border-radius: 1rem;
     margin: auto;
     background-color: rgb(43, 226, 150);
+}
+
+.charts-container{
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(3, 1fr) repeat(3, 2fr) 1fr;
     grid-template-rows: repeat(8, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 15px;
+    height: 100%;
 }
 
-.ahmad{
-    grid-area: 2 / 4 / 4 / 7;
-}
+/*ahamd*/
+.box1 { grid-area: 2 / 4 / 4 / 5; }
+.box2 { grid-area: 2 / 5 / 4 / 6; }
+.box3 { grid-area: 2 / 6 / 4 / 7; }
 
-.dennis{
-    grid-column: 4 / 4;
-    grid-row: 6 / 7;
-}
+/*dennis*/
+.box4 { grid-area: 4 / 6 / 6 / 7; }
+.box5 { grid-area: 4 / 5 / 6 / 6; }
+.box6 { grid-area: 4 / 4 / 6 / 5; }
 
-.jay{
-    grid-area: 6 / 4 / 8 / 7;
-}
-/*.box, .box2, .box3 {
-    width: 40%;
-
-}*/
+/*jay*/
+.box7 { grid-area: 6 / 4 / 8 / 5; }
+.box8 { grid-area: 6 / 5 / 8 / 6; }
+.box9 { grid-area: 6 / 6 / 8 / 7; }
 
 footer {
     background-color: #333;
@@ -49,4 +51,12 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+.box{
+    background-color: black;
+}
+
+.box1{
+    background-color: red;
 }
