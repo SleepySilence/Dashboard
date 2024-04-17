@@ -34,8 +34,19 @@ li{
 .box3 { grid-area: 2 / 6 / 4 / 7; }
 
 /*dennis*/
-.box4 { grid-area: 4 / 6 / 6 / 7; }
-.box5 { grid-area: 4 / 5 / 6 / 6; }
+.binnenTemperatuur { 
+    grid-area: 4 / 6 / 6 / 7; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.zonondergang-opkomst { 
+    grid-area: 4 / 5 / 6 / 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .box6 { grid-area: 4 / 4 / 6 / 5; }
 
 /*jay*/
@@ -54,9 +65,7 @@ footer {
 }
 
 .box{
-    background-color: black;
+    background-color:white;
+    border-radius: 15px;
 }
 
-.box1{
-    background-color: red;
-}
