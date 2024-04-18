@@ -12,7 +12,7 @@ const data = {
     labels: labels,
     datasets: [{
         label: 'Opbrengst in KwH',
-        backgroundColor: ["red", "green", "pink", "yellow", "black"],
+        backgroundColor: ["blue"],
         data: [7, 6, 5, 4, 10, 6, 9]
     }]
 };
