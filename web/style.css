@@ -15,7 +15,13 @@ body {
 }
 
 .container{
+<<<<<<< HEAD
     position: relative;
+=======
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+>>>>>>> 0083d8ab09a0062e2dc17e3248b9d0107ce9b51b
     margin: auto;
     width: 95%;
     height: 95%;
