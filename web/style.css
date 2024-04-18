@@ -41,13 +41,23 @@ li{
     align-items: center;
 
 }
-.zonondergang-opkomst { 
+.zonKwH { 
     grid-area: 4 / 5 / 6 / 6;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
-.box6 { grid-area: 4 / 4 / 6 / 5; }
+
+.binnenTemperatuur > h2{
+    font-size: 5rem;
+}
+
+.zonondergang-opkomst {
+     grid-area: 4 / 4 / 6 / 5; 
+     padding: 0.5rem;
+     
+    }
 
 /*jay*/
 .box7 { grid-area: 6 / 4 / 8 / 5; }
