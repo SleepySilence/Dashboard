@@ -1,4 +1,28 @@
-const labels = [
+    (function () {
+    (".sidebar-link").click(function () {
+     (".sidebar-link").removeClass("is-active");
+     (this).addClass("is-active");
+    });
+   });
+
+   
+   
+   (function () {
+    (".logo, .logo-expand, .discover").on("click", function (e) {
+     (".main-container").removeClass("show");
+     (".main-container").scrollTop(0);
+    });
+    (".trending, .video").on("click", function (e) {
+     (".main-container").addClass("show");
+     (".main-container").scrollTop(0);
+     (".sidebar-link").removeClass("is-active");
+     (".trending").addClass("is-active");
+    });
+   });
+
+   //--------------------------------------------------
+
+   const labels = [
     'maandag',
     'dinsdag',
     'woensdag',
@@ -39,3 +63,5 @@ fetch("https://api.sunrise-sunset.org/json?lat=52.37403&lng=4.88969&formatted=0"
         zonsOndergangApi.innerHTML = "Zonsondergang in Amsterdam: " + sunset.toLocaleTimeString();
     })
     
+
+  
