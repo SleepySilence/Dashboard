@@ -63,5 +63,32 @@ fetch("https://api.sunrise-sunset.org/json?lat=52.37403&lng=4.88969&formatted=0"
         zonsOndergangApi.innerHTML = "Zonsondergang in Amsterdam: " + sunset.toLocaleTimeString();
     })
     
+//----------
 
-  
+const apiURL = "https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current=temperature_2m&hourly=temperature_2m&timezone=auto";
+
+fetch(apiURL)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    return response.json();
+  })
+  .then(data => {
+    // Display the current temperature
+    const currentTemperature = data.current.temperature_2m;
+    document.getElementById("currentTemperature").innerHTML = `Current Temperature: ${currentTemperature}°C`;
+
+    // Display hourly temperatures
+    const hourlyTemperatures = data.hourly.temperature_2m;
+    const hourlyTemperaturesDiv = document.getElementById("hourlyTemperatures");
+    hourlyTemperaturesDiv.innerHTML = "<h2>Hourly Temperatures:</h2>";
+    hourlyTemperatures.forEach((temperature, hour) => {
+      const temperatureDiv = document.createElement("div");
+      temperatureDiv.textContent = `Hour ${hour}: ${temperature}°C`;
+      hourlyTemperaturesDiv.appendChild(temperatureDiv);
+    });
+  })
+  .catch(error => {
+    console.error(`Error fetching data: ${error.message}`);
+  });
